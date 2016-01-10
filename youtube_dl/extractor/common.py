@@ -55,6 +55,7 @@ from ..utils import (
     mimetype2ext,
     update_Request,
     update_url_query,
+    parse_m3u8_attributes,
 )
 
 
@@ -1152,23 +1153,11 @@ class InfoExtractor(object):
             }]
         last_info = None
         last_media = None
-        kv_rex = re.compile(
-            r'(?P<key>[a-zA-Z_-]+)=(?P<val>"[^"]+"|[^",]+)(?:,|$)')
         for line in m3u8_doc.splitlines():
             if line.startswith('#EXT-X-STREAM-INF:'):
-                last_info = {}
-                for m in kv_rex.finditer(line):
-                    v = m.group('val')
-                    if v.startswith('"'):
-                        v = v[1:-1]
-                    last_info[m.group('key')] = v
+                last_info = parse_m3u8_attributes(line)
             elif line.startswith('#EXT-X-MEDIA:'):
-                last_media = {}
-                for m in kv_rex.finditer(line):
-                    v = m.group('val')
-                    if v.startswith('"'):
-                        v = v[1:-1]
-                    last_media[m.group('key')] = v
+                last_media = parse_m3u8_attributes(line)
             elif line.startswith('#') or not line.strip():
                 continue
             else:
