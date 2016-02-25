@@ -671,7 +671,6 @@ from .southpark import (
     SouthParkEsIE,
     SouthParkNlIE
 )
-from .space import SpaceIE
 from .spankbang import SpankBangIE
 from .spankwire import SpankwireIE
 from .spiegel import SpiegelIE, SpiegelArticleIE
