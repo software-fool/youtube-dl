@@ -508,6 +508,7 @@ from .npr import NprIE
 from .nrk import (
     NRKIE,
     NRKPlaylistIE,
+    NRKSkoleIE,
     NRKTVIE,
 )
 from .ntvde import NTVDeIE
