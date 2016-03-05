@@ -31,6 +31,7 @@ from ..utils import (
     age_restricted,
     bug_reports_message,
     clean_html,
+    codec2ext,
     compiled_regex_type,
     determine_ext,
     error_to_compat_str,
@@ -1476,6 +1477,7 @@ class InfoExtractor(object):
                         f = {
                             'format_id': '%s-%s' % (mpd_id, representation_id) if mpd_id else representation_id,
                             'url': base_url,
+                            'ext': codec2ext(representation_attrib.get('codecs')),
                             'width': int_or_none(representation_attrib.get('width')),
                             'height': int_or_none(representation_attrib.get('height')),
                             'tbr': int_or_none(representation_attrib.get('bandwidth'), 1000),
