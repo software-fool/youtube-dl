@@ -738,6 +738,7 @@ from .theplatform import (
     ThePlatformFeedIE,
 )
 from .thesixtyone import TheSixtyOneIE
+from .thestar import TheStarIE
 from .thisamericanlife import ThisAmericanLifeIE
 from .thisav import ThisAVIE
 from .tinypic import TinyPicIE
