@@ -961,7 +961,9 @@ from .youtube import (
     YoutubeChannelIE,
     YoutubeFavouritesIE,
     YoutubeHistoryIE,
+    YoutubeLiveIE,
     YoutubePlaylistIE,
+    YoutubePlaylistsIE,
     YoutubeRecommendedIE,
     YoutubeSearchDateIE,
     YoutubeSearchIE,
@@ -971,7 +973,6 @@ from .youtube import (
     YoutubeTruncatedIDIE,
     YoutubeTruncatedURLIE,
     YoutubeUserIE,
-    YoutubePlaylistsIE,
     YoutubeWatchLaterIE,
 )
 from .zapiks import ZapiksIE
