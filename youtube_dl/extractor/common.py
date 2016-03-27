@@ -1023,8 +1023,6 @@ class InfoExtractor(object):
                 'height': int_or_none(media_el.attrib.get('height')),
                 'preference': preference,
             })
-        self._sort_formats(formats)
-
         return formats
 
     def _extract_m3u8_formats(self, m3u8_url, video_id, ext=None,
@@ -1145,7 +1143,6 @@ class InfoExtractor(object):
                     last_media = None
                 formats.append(f)
                 last_info = {}
-        self._sort_formats(formats)
         return formats
 
     @staticmethod
@@ -1318,8 +1315,6 @@ class InfoExtractor(object):
                     'height': height,
                 })
                 continue
-
-        self._sort_formats(formats)
 
         return formats
 
@@ -1538,7 +1533,6 @@ class InfoExtractor(object):
                             existing_format.update(f)
                     else:
                         self.report_warning('Unknown MIME type %s in DASH manifest' % mime_type)
-        self._sort_formats(formats)
         return formats
 
     def _live_title(self, name):
