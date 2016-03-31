@@ -905,6 +905,7 @@ from .vk import (
 from .vlive import VLiveIE
 from .vodlocker import VodlockerIE
 from .voicerepublic import VoiceRepublicIE
+from .voxmedia import VoxMediaIE
 from .vporn import VpornIE
 from .vrt import VRTIE
 from .vube import VubeIE
