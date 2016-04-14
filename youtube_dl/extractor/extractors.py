@@ -735,6 +735,7 @@ from .sztvhu import SztvHuIE
 from .tagesschau import TagesschauIE
 from .tapely import TapelyIE
 from .tass import TassIE
+from .tdslifeway import TDSLifewayIE
 from .teachertube import (
     TeacherTubeIE,
     TeacherTubeUserIE,
