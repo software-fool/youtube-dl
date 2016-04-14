@@ -838,7 +838,6 @@ from .twitter import (
     TwitterIE,
     TwitterAmplifyIE,
 )
-from .ubu import UbuIE
 from .udemy import (
     UdemyIE,
     UdemyCourseIE
