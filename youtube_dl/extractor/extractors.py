@@ -416,7 +416,8 @@ from .mitele import MiTeleIE
 from .mixcloud import (
     MixcloudIE,
     MixcloudUserIE,
-    MixcloudPlaylistIE
+    MixcloudPlaylistIE,
+    MixcloudStreamIE,
 )
 from .mlb import MLBIE
 from .mnet import MnetIE
