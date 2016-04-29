@@ -658,7 +658,6 @@ from .screenwavemedia import ScreenwaveMediaIE, TeamFourIE
 from .senateisvp import SenateISVPIE
 from .servingsys import ServingSysIE
 from .sexu import SexuIE
-from .sexykarma import SexyKarmaIE
 from .shahid import ShahidIE
 from .shared import SharedIE
 from .sharesix import ShareSixIE
@@ -919,6 +918,7 @@ from .vulture import VultureIE
 from .walla import WallaIE
 from .washingtonpost import WashingtonPostIE
 from .wat import WatIE
+from .watchindianporn import WatchIndianPornIE
 from .wdr import (
     WDRIE,
     WDRMobileIE,
