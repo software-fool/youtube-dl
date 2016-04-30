@@ -943,7 +943,7 @@ from .xhamster import (
     XHamsterEmbedIE,
 )
 from .xiami import (
-    XiamiIE,
+    XiamiSongIE,
     XiamiAlbumIE,
     XiamiArtistIE,
     XiamiCollectionIE
