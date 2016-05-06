@@ -76,6 +76,7 @@ from .bigflix import BigflixIE
 from .bild import BildIE
 from .bilibili import BiliBiliIE
 from .biobiochiletv import BioBioChileTVIE
+from .biqle import BIQLEIE
 from .bleacherreport import (
     BleacherReportIE,
     BleacherReportCMSIE,
