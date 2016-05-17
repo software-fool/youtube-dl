@@ -384,6 +384,7 @@ from .leeco import (
     LePlaylistIE,
     LetvCloudIE,
 )
+from .libraryofcongress import LibraryOfCongressIE
 from .libsyn import LibsynIE
 from .lifenews import (
     LifeNewsIE,
