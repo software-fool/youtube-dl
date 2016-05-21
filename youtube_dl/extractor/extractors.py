@@ -112,6 +112,7 @@ from .cbc import (
     CBCPlayerIE,
 )
 from .cbs import CBSIE
+from .cbslocal import CBSLocalIE
 from .cbsinteractive import CBSInteractiveIE
 from .cbsnews import (
     CBSNewsIE,
