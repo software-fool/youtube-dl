@@ -632,6 +632,7 @@ from .rds import RDSIE
 from .redtube import RedTubeIE
 from .regiotv import RegioTVIE
 from .restudy import RestudyIE
+from .reuters import ReutersIE
 from .reverbnation import ReverbNationIE
 from .revision3 import Revision3IE
 from .rice import RICEIE
