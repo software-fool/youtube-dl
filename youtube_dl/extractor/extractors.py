@@ -835,7 +835,10 @@ from .tvc import (
 )
 from .tvigle import TvigleIE
 from .tvland import TVLandIE
-from .tvp import TvpIE, TvpSeriesIE
+from .tvp import (
+    TVPIE,
+    TVPSeriesIE,
+)
 from .tvplay import TVPlayIE
 from .tweakers import TweakersIE
 from .twentyfourvideo import TwentyFourVideoIE
