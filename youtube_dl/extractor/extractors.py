@@ -57,6 +57,7 @@ from .arte import (
     ArteTVDDCIE,
     ArteTVMagazineIE,
     ArteTVEmbedIE,
+    ArteTVPlaylistIE,
 )
 from .atresplayer import AtresPlayerIE
 from .atttechchannel import ATTTechChannelIE
