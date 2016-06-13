@@ -863,6 +863,7 @@ from .twitch import (
     TwitchProfileIE,
     TwitchPastBroadcastsIE,
     TwitchStreamIE,
+    TwitchClipsIE,
 )
 from .twitter import (
     TwitterCardIE,
