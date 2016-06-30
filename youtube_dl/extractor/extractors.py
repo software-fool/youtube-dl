@@ -715,6 +715,7 @@ from .skynewsarabia import (
     SkyNewsArabiaIE,
     SkyNewsArabiaArticleIE,
 )
+from .skysports import SkySportsIE
 from .slideshare import SlideshareIE
 from .slutload import SlutloadIE
 from .smotri import (
