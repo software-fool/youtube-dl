@@ -1067,6 +1067,7 @@ from .youtube import (
     YoutubeSearchDateIE,
     YoutubeSearchIE,
     YoutubeSearchURLIE,
+    YoutubeSharedVideoIE,
     YoutubeShowIE,
     YoutubeSubscriptionsIE,
     YoutubeTruncatedIDIE,
