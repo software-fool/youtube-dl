@@ -159,8 +159,8 @@ from .coub import CoubIE
 from .collegerama import CollegeRamaIE
 from .comedycentral import (
     ComedyCentralIE,
-    ComedyCentralShowsIE,
     ComedyCentralTVIE,
+    ToshIE,
 )
 from .comcarcoff import ComCarCoffIE
 from .commonmistakes import CommonMistakesIE, UnicodeBOMIE
@@ -481,7 +481,6 @@ from .msn import MSNIE
 from .mtv import (
     MTVIE,
     MTVServicesEmbeddedIE,
-    MTVIggyIE,
     MTVDEIE,
 )
 from .muenchentv import MuenchenTVIE
@@ -531,7 +530,6 @@ from .nextmedia import (
     NextMediaActionNewsIE,
     AppleDailyIE,
 )
-from .nextmovie import NextMovieIE
 from .nfb import NFBIE
 from .nfl import NFLIE
 from .nhl import (
