@@ -893,6 +893,7 @@ from .tvc import (
 from .tvigle import TvigleIE
 from .tvland import TVLandIE
 from .tvp import (
+    TVPEmbedIE,
     TVPIE,
     TVPSeriesIE,
 )
