@@ -311,7 +311,6 @@ from .globo import (
 )
 from .godtube import GodTubeIE
 from .godtv import GodTVIE
-from .goldenmoustache import GoldenMoustacheIE
 from .golem import GolemIE
 from .googledrive import GoogleDriveIE
 from .googleplus import GooglePlusIE
@@ -1005,6 +1004,7 @@ from .viki import (
     VikiIE,
     VikiChannelIE,
 )
+from .viu import ViuIE
 from .vk import (
     VKIE,
     VKUserVideosIE,
