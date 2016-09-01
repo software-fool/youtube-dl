@@ -487,6 +487,7 @@ from .motherless import MotherlessIE
 from .motorsport import MotorsportIE
 from .movieclips import MovieClipsIE
 from .moviezine import MoviezineIE
+from .movingimage import MovingImageIE
 from .msn import MSNIE
 from .mtv import (
     MTVIE,
@@ -807,7 +808,6 @@ from .srgssr import (
     SRGSSRPlayIE,
 )
 from .srmediathek import SRMediathekIE
-from .ssa import SSAIE
 from .stanfordoc import StanfordOpenClassroomIE
 from .steam import SteamIE
 from .streamable import StreamableIE
