@@ -917,6 +917,7 @@ from .tvc import (
 )
 from .tvigle import TvigleIE
 from .tvland import TVLandIE
+from .tvnoe import TVNoeIE
 from .tvp import (
     TVPEmbedIE,
     TVPIE,
