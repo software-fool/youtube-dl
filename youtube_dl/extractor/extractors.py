@@ -535,6 +535,7 @@ from .nbc import (
     CSNNEIE,
     NBCIE,
     NBCNewsIE,
+    NBCOlympicsIE,
     NBCSportsIE,
     NBCSportsVPlayerIE,
 )
