@@ -54,7 +54,7 @@ XML_POST_DATA="""<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soa
 
 
 class ITVIE(InfoExtractor):
-    _VALID_URL = r'^http://www.itv.com/hub/(?P<show>[-\w]+)/(?P<id>[\da-f]+)$'
+    _VALID_URL = r'^http://www.itv.com/hub/(?P<show>[-\w]+)/(?P<id>[A-Z]*[\da-f]+)$'
     _TEST = {
         'url': 'http://www.itv.com/hub/vera/1a7314a0025',
         'info_dict': {
@@ -119,23 +119,25 @@ class ITVIE(InfoExtractor):
                           "no_resume": True,
                           "player_url": "http://www.itv.com/mercury/Mercury_VideoPlayer.swf"})
 
-        subtitle_url = self._html_search_regex(ITVIE._SUBTITLES_RE, xml_prog_data, 'subtitle_url')
         subtitles = {}
-        subtitles["en"] = [
-            {
-                'url': subtitle_url,
-                'ext': "ttml"
-            }
-        ]
+        subtitle_url = None
+        #subtitle_url = self._html_search_regex(ITVIE._SUBTITLES_RE, xml_prog_data, 'subtitle_url')
+        if subtitle_url:
+            subtitles["en"] = [
+                {
+                    'url': subtitle_url,
+                    'ext': "ttml"
+                }
+            ]
         
         return {
             'id': unencoded_productionId,
             'series': json_blob['series'],
             'title': json_blob['series'],
             'episode': json_blob['episode'],
-            'episode_number': json_blob['episode_number'],
+#            'episode_number': json_blob['episode_number'],
             'description': json_blob['description'],
-            'season_number': json_blob['season_number'],
+#            'season_number': json_blob['season_number'],
             'formats': formats,
             'subtitles': subtitles
         }
